@@ -5,6 +5,8 @@ intro()
 
 print
 
+cigiOrNot=0
+
 while True:
 	cigiOrNot = input()
 	try:
@@ -23,7 +25,15 @@ while True:
 
 
 
-
+print("")
+print("Lassan lesétálsz a 3as metróba, majd elindulsz Kőbánya-Kispest irányába.")
+print("")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print("")
+print("")
 
 
 
