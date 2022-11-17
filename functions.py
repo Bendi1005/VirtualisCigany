@@ -1,6 +1,6 @@
 import os
 
-state = 0
+
 
 def intro():
 
@@ -11,7 +11,7 @@ def intro():
     print(F"\nA cigányok megtalálnak és az egyik cigarettát kér tőled, mit válaszolsz?")
     print(F"\n1 - Ittvan testvér, szívjad egészséggel!")
     print("2 - Sajnálon, de sietek!\n")
-state += 1
+
 
 
 
