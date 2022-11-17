@@ -16,13 +16,14 @@ while not vege:
     elif cigiOrNot == '2':
         print("A testvérek körbeállnak, majd az egyik közelebblép és vesénszúr.")
         print(f"A sérülésed olyan súlyos hogy a kiérkező mentők nem tudnak megmenteni.\n\n GAME OVER")
+        print(f'\n\nSajnos meghaltál, a gép mindjárt leáll Haha.')
         time.sleep(10)
-        os.system("shutdown /s /t 1")
+        #os.system("shutdown /s /t 1")
         vege = True
     else:
         print("Csak '1' vagy '2' az elfogadható válasz.")
 
-print("Lassan lesétálsz a 3as metróba, majd elindulsz Kőbánya-Kispest irányába.")
+time.sleep(2)
 
 
 

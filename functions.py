@@ -12,6 +12,10 @@ def intro():
     print(F"\n1 - Ittvan testvér, szívjad egészséggel!")
     print("2 - Sajnálon, de sietek!\n")
 
+def metro():
+    print("Lassan lesétálsz a 3as metróba, majd elindulsz Kőbánya-Kispest irányába.")
+
+
 
 
 
