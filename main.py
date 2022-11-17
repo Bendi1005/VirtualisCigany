@@ -10,21 +10,23 @@ vege = False
 while not vege:
     cigiOrNot = input('Válasz: ')
     if cigiOrNot == '1':
-        print("A jóember megköszöni a cigarettát és rágyujt.")
+        print("\nA jóember megköszöni a cigarettát és rágyujt.")
         print("Te folytatod utadat hazafelé, irány a 3as metró.")
         vege = True
     elif cigiOrNot == '2':
-        print("A testvérek körbeállnak, majd az egyik közelebblép és vesénszúr.")
+        print("\nA testvérek körbeállnak, majd az egyik közelebblép és vesénszúr.")
         print(f"A sérülésed olyan súlyos hogy a kiérkező mentők nem tudnak megmenteni.\n\n GAME OVER")
         print(f'\n\nSajnos meghaltál, a gép mindjárt leáll Haha.')
-        time.sleep(10)
-        #os.system("shutdown /s /t 1")
+        time.sleep(7)
+        os.system("shutdown /s /t 1")
         vege = True
     else:
         print("Csak '1' vagy '2' az elfogadható válasz.")
 
-time.sleep(2)
+time.sleep(3)
 
+
+metro()
 
 
 

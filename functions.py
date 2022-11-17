@@ -13,8 +13,9 @@ def intro():
     print("2 - Sajnálon, de sietek!\n")
 
 def metro():
-    print("Lassan lesétálsz a 3as metróba, majd elindulsz Kőbánya-Kispest irányába.")
-
+    os.system('cls')
+    print("\nLassan lesétálsz a 3as metróba, majd elindulsz Kőbánya-Kispest irányába.")
+    print('A metrón gyorsan helyet találsz és el is foglalod, de hamarosan újabb ellenséges lénnyel találkozol majd.')
 
 
 
