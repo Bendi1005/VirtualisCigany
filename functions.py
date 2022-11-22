@@ -1,6 +1,8 @@
+
 import os
 
-
+filename = 'data.csv'
+cimsor = ''
 
 def intro():
 
@@ -18,6 +20,12 @@ def metro():
     print('A metrón gyorsan helyet találsz és el is foglalod, de hamarosan újabb ellenséges lénnyel találkozol majd.')
 
 
+def saveResult():
+    file = open(filename, 'a', encoding='utf-8')
+    file.write(f'succes\n')
+    file.close
 
-
-
+def resultFailure():
+    file = open(filename, 'a', encoding='utf-8')
+    file.write(f'failure\n')
+    file.close

@@ -5,7 +5,9 @@ intro()
 
 cigiOrNot='0'
 
+Fail = False
 vege = False
+
 # while not vege:
 while not vege:
     cigiOrNot = input('Válasz: ')
@@ -17,8 +19,10 @@ while not vege:
         print("\nA testvérek körbeállnak, majd az egyik közelebblép és vesénszúr.")
         print(f"A sérülésed olyan súlyos hogy a kiérkező mentők nem tudnak megmenteni.\n\n GAME OVER")
         print(f'\n\nSajnos meghaltál, a gép mindjárt leáll Haha.')
+        resultFailure()
         time.sleep(7)
-        os.system("shutdown /s /t 1")
+        #os.system("shutdown /s /t 1")
+        Fail = True
         vege = True
     else:
         print("Csak '1' vagy '2' az elfogadható válasz.")
@@ -28,5 +32,6 @@ time.sleep(3)
 
 metro()
 
-
+if Fail == False:
+    saveResult()
 
