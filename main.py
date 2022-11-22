@@ -21,7 +21,7 @@ while not vege:
         print(f'\n\nSajnos meghaltál, a gép mindjárt leáll Haha.')
         resultFailure()
         time.sleep(7)
-        #os.system("shutdown /s /t 1")
+        os.system("shutdown /s /t 1")
         Fail = True
         vege = True
     else:
@@ -35,3 +35,4 @@ metro()
 if Fail == False:
     saveResult()
 
+printResult()
