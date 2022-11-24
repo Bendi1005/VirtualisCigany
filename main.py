@@ -5,7 +5,7 @@ intro()
 
 cigiOrNot='0'
 
-Fail = False
+Fail = True
 vege = False
 
 # while not vege:
@@ -14,6 +14,7 @@ while not vege:
     if cigiOrNot == '1':
         print("\nA jóember megköszöni a cigarettát és rágyujt.")
         print("Te folytatod utadat hazafelé, irány a 3as metró.")
+        Fail = False
         vege = True
     elif cigiOrNot == '2':
         print("\nA testvérek körbeállnak, majd az egyik közelebblép és vesénszúr.")
@@ -34,10 +35,10 @@ time.sleep(3)
 
 metro()
 
-if Fail == False:
+if Fail != False:
     saveResult()
 
 
 
 print(f'Sikeres végigjutások száma: {countResult("success")}')
-print(f'Wlkövetett hibák száma: {countResult("failure")}')
+print(f'Elkövetett hibák száma: {countResult("failure")}')
