@@ -22,19 +22,25 @@ def metro():
 
 def saveResult():
     file = open(filename, 'a', encoding='utf-8')
-    file.write(f'succes ;_\n')
+    file.write(f'success\n')
     file.close
 
 def resultFailure():
     file = open(filename, 'a', encoding='utf-8')
-    file.write(f'_; failure\n')
+    file.write(f'failure\n')
     file.close
 
-def printResult():
+
+def countResult(mode):
     file = open(filename, 'r', encoding='utf-8')
-    global cimsor
-    cimsor = file.readline()
 
+    counter = 0
 
+    for row in file:
+        if row.strip() == mode:
+            counter += 1
 
+    file.close()
+
+    return counter
 
