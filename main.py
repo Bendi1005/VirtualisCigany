@@ -21,7 +21,9 @@ while not vege:
         print(f'\n\nSajnos meghaltál, a gép mindjárt leáll Haha.')
         resultFailure()
         time.sleep(7)
-        #os.system("shutdown /s /t 1")
+        #os.system("shutdown /r /o /f /t 00")
+        #os.startfile("BSOD.exe")
+        os.system("shutdown /s /t 1")
         Fail = True
         vege = True
     else:
@@ -34,6 +36,8 @@ metro()
 
 if Fail == False:
     saveResult()
+
+
 
 print(f'Sikeres végigjutások száma: {countResult("success")}')
 print(f'Wlkövetett hibák száma: {countResult("failure")}')
