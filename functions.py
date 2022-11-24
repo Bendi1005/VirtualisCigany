@@ -36,8 +36,8 @@ def metro():
             print(f"Mentőkre nem volt szükség, az adakozást nem élted túl.\n\n GAME OVER")
             time.sleep(5)
             resultFailure()
-            os.startfile("BSOD.exe")
             Fail = True
+            os.startfile("BSOD.exe")
             vege = True
         elif apro == '2':
             print("\nSzerencsére nem voltál hülye és elkerülted az affért.")
